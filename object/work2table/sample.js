@@ -20,9 +20,20 @@ function display() {
         t_name.textContent = element.name
         t_row.appendChild(t_name)
 
+
         const t_age = document.createElement('td')
         t_age.textContent = element.age
         t_row.appendChild(t_age)
+
+
+        const edit_td=document.createElement('td')
+        const edit_btn=document.createElement('button')
+        edit_btn.textContent='edit'
+        edit_btn.onclick=function(){
+            edit_frm(element.id)
+        }
+        edit_td.appendChild(edit_btn)
+        t_row.appendChild(edit_td)
         t_var.appendChild(t_row)
     });
 }
@@ -40,17 +51,48 @@ document.getElementById('age').value = ''
 display()
 })
 
-document.getElementById('editform').addEventListener('edit', function (event) {
-    event.preventDefault() 
-const id = document.getElementById('id').value
-const name = document.getElementById('name').value
-const age = parseInt(document.getElementById('age').value)
-d.push({id:id,name:name,age:age})
-document.getElementById('id').value = ''
-document.getElementById('name').value = ''
-document.getElementById('age').value = ''
+// document.getElementById('editform').addEventListener('edit', function (event) {
+//     event.preventDefault() 
+// const id = document.getElementById('id').value
+// const name = document.getElementById('name').value
+// const age = parseInt(document.getElementById('age').value)
+// d.push({id:id,name:name,age:age})
+// document.getElementById('id').value = ''
+// document.getElementById('name').value = ''
+// document.getElementById('age').value = ''
 
 
-display()
+// display()
+// })
+
+
+let edit_id=''
+function edit_frm(id){
+    console.log('editing',id);
+    document.getElementById('editform').style.display='block'
+    document.getElementById('submitform').style.display='none'
+    const edit_data=d.find(user=>user.id==id)
+    document.getElementById('edit_id').value=edit_data.id
+    document.getElementById('edit_name').value=edit_data.name
+    document.getElementById('edit_age').value=edit_data.age
+    edit_id=id
+}
+
+document.getElementById('editform').addEventListener('submit',function(event){
+    event.preventDefault()
+    const edit_id=document.getElementById('edit_id').value
+    const edit_name=document.getElementById('edit_name').value
+    const edit_age=document.getElementById('edit_age').value
+    d=d.map(user=>{
+        if(user.id==edit_id){
+            return {...user,id:edit_id,name:edit_name,age:edit_age}
+        }
+        return user
+    })
+    // console.log(edit_id,edit_name,edit_age);
+    document.getElementById('editform').style.display='none'
+    document.getElementById('submitform').style.display='block'
+    display()
 })
 
+display()
