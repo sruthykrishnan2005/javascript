@@ -104,6 +104,7 @@ document.getElementById('editform').addEventListener('submit',function(event){
     display()
 })
 
+
 function delete_data(id){
     d=d.filter(user=>{
         if(user.id!=id){

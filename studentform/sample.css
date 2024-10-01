@@ -1,20 +1,47 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    margin: 20px;
 }
 
 h1 {
+    color: gray;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th,td{
+    border: 1px solid #ccc;
+    padding: 10px;
     text-align: left;
+
+}
+th{
+    background-color: whitesmoke;
+    color: black;
+}
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    margin-bottom: 20px;
 }
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom:10px 0  5px;
+}
+input{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 button {
-    width: 80px;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #28a745;
     color: white;
     border: none;
