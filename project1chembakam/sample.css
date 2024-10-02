@@ -1,27 +1,27 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Default font */
+    font-family: Arial, sans-serif; 
 }
 
 header {
-    background-color: rgb(46, 45, 45); /* Dark background for the header */
-    color: white; /* White text color */
-    padding: 20px; /* Padding for header */
+    background-color: rgb(46, 45, 45); 
+    color: white; 
+    padding: 20px; 
 }
 
 .headerleft {
     display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .mainnavbar {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
 .logo {
-    margin-right: 20px; /* Space between logo and nav links */
+    margin-right: 20px; 
 }
 
 .logo img {
@@ -32,17 +32,20 @@ header {
     display: flex; /* Display links in a row */
     align-items: center; /* Center items vertically */
     gap: 20px; /* Space between links */
+    margin-left: 550px;
 }
 
 .nav-links a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Padding for links */
-    position: relative; /* Position for dropdown arrow */
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    position: relative; 
+   
+    
 }
 
 .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .dropdown-arrow {
@@ -115,11 +118,13 @@ header {
     overflow: hidden;
     margin: 0 auto;
     background-color: #fff;
+    margin-top: 100px;
 }
 
 .category-item .circle img {
     width: 100%;
     height: auto;
+    
 }
 
 .category-item p {
@@ -326,47 +331,7 @@ header {
 .content {
     padding: 20px;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-.content {
-    padding: 20px;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.footer-left img {
-    max-width: 100px; /* Adjust logo size */
-    margin-right: 15px;
-}
-
-.col-2 {
-    flex: 1;
-    margin: 10px;
-    display: table-row;
-}
-
-.list-group {
-    list-style-type: none;
-    padding: 0;
+.body22{
+    height: 600px;
+    
 }
