@@ -25,13 +25,13 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Set a fixed height for logo */
+    height: 50px; 
 }
 
 .nav-links {
-    display: flex; /* Display links in a row */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Space between links */
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
     margin-left: 550px;
 }
 
@@ -49,30 +49,29 @@ header {
 }
 
 .dropdown-arrow {
-    margin-left: 5px; /* Space between link text and arrow */
+    margin-left: 5px; 
 }
 
 .searchbar {
-    display: flex; /* Flexbox for search bar */
-    align-items: center; /* Center items vertically */
-    gap: 5px; /* Space between icon and input */
-    border: 1px solid white; /* Border for search bar */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding inside the search bar */
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    border: 1px solid white; 
+    border-radius: 5px; 
+    padding: 5px; 
 }
 
 .searchbar input {
-    border: none; /* Remove default border */
-    outline: none; /* Remove outline */
-    color: white; /* Text color */
-    background: transparent; /* Transparent background */
-    padding: 5px; /* Padding inside input */
-    flex-grow: 1; /* Allow input to take available space */
+    border: none; 
+    outline: none; 
+    background: transparent; 
+    padding: 5px; 
+    flex-grow: 1; 
 }
 
 .searchbar .material-symbols-outlined {
-    color: white; /* Icon color */
-    font-size: 20px; /* Icon size */
+    color: white; 
+    font-size: 20px; 
 }
 
 .searchbar .search-icon {
@@ -132,16 +131,16 @@ header {
     font-weight: bold;
 }
 .overlay-content {
-    text-align: left; /* Aligns text to the left */
-    padding: 20px; /* Optional padding */
+    text-align: left; 
+    padding: 20px;
 }
 
 .button-container {
-    margin-top: 10px; /* Space between heading and buttons */
+    margin-top: 10px;
 }
 
 .cta-button {
-    margin-right: 10px; /* Space between buttons */
+    margin-right: 10px; 
 }
 .container3 {
     padding: 20px;
@@ -149,45 +148,45 @@ header {
 }
 
 .products {
-    max-width: 1200px; /* Set a max width */
-    margin: 0 auto; /* Center align */
-    text-align: center; /* Center text */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .product-slider {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: 15px; /* Space between items */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
 }
 
 .product-item {
-    background-color: #fff; /* White background for products */
-    border-radius: 8px; /* Rounded corners */
-    padding: 30px; /* Padding inside product item */
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 30px; 
 }
 
 .product-item img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .products h1 {
-    color: grey; /* Heading color */
+    color: grey; 
 }
 .productbtn {
-    text-align: center; /* Center text inside the div */
-    margin: 20px 0; /* Space above and below the button */
+    text-align: center; 
+    margin: 20px 0; 
    
 }
 
 .productbtn button {
-    padding: 10px 20px; /* Padding for the button */
+    padding: 10px 20px; 
     font-size: 30px;
-    background-color: rgb(219, 210, 205); /* Button color */
-    color: rgb(17, 15, 15); /* Text color */
-    border: black; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
+    background-color: rgb(219, 210, 205); 
+    color: rgb(17, 15, 15); 
+    border: black; 
+    border-radius: 5px; 
+    cursor: pointer; 
     transition: background-color 0.3s; 
 }
 .container2 {
@@ -234,7 +233,7 @@ header {
     color: white; 
     text-align: center; 
     padding: 20px; 
-    /* background-color: rgba(0, 0, 0, 0.5);  */
+    
     border-radius: 10px;
 }
 
@@ -253,9 +252,9 @@ header {
     background-color: rgb(255, 112, 67); 
 }
 .container-fluid {
-    width: 100px; /* Full width of the viewport */
-    padding: 0; /* No padding */
-    margin-top: 1rem; /* Adjust top margin */
+    width: 100px; 
+    padding: 0; 
+    margin-top: 1rem;
 }
 .container3 {
     padding: 20px;
@@ -263,34 +262,34 @@ header {
 }
 
 .products {
-    max-width: 1200px; /* Set a max width */
-    margin: 0 auto; /* Center align */
-    text-align: center; /* Center text */
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center; 
 }
 
 .product-slider {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: 15px; /* Space between items */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
 }
 
 .product-item {
-    background-color: #fff; /* White background for products */
-    border-radius: 8px; /* Rounded corners */
-    padding: 30px; /* Padding inside product item */
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 30px; 
 }
 
 .product-item img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .products h1 {
-    color: grey; /* Heading color */
-}
+    color: grey; 
 .productbtn {
-    text-align: center; /* Center text inside the div */
-    margin: 20px 0; /* Space above and below the button */
+    text-align: center; 
+    margin: 20px 0; 
+}
 }
 
 .container4 {
@@ -299,34 +298,33 @@ header {
 }
 
 .product1 {
-    max-width: 1200px; /* Set a max width */
-    margin: 0 auto; /* Center align */
-    text-align: center; /* Center text */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .product-slider1 {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: 15px; /* Space between items */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
 }
 
 .product-item {
-    background-color: #fff; /* White background for products */
-    border-radius: 8px; /* Rounded corners */
-    padding: 30px; /* Padding inside product item */
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 30px; 
 }
 
 .product-item1 img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
-
 .product1 h1 {
-    color: grey; /* Heading color */
+    color: grey; 
 }
 .productbtn1 {
-    text-align: center; /* Center text inside the div */
-    margin: 20px 0; /* Space above and below the button */
+    text-align: center; 
+    margin: 20px 0; /
 }
 .content {
     padding: 20px;
