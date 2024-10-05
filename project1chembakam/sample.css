@@ -314,7 +314,7 @@ body {
 
 @media (max-width: 768px) {
     .overlay-content h1 {
-        font-size: 24px; /* Adjust size for smaller screens */
+        font-size: 24px; 
     }
     
     .overlay-content .cta-button {
@@ -323,22 +323,22 @@ body {
     }
     
     .categories {
-        flex-wrap: nowrap; /* Prevent wrapping */
-        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
     }
 
     .category-item {
-        flex: 0 0 50%; /* Each item takes up 50% of the container */
-        /* Adjusted to ensure only 2 circles are displayed */
+        flex: 0 0 50%; 
+       
 
 
     }
 
 
     .footer img {
-        max-width: 100%; /* Make footer images responsive */
-        height: auto; /* Maintain aspect ratio */
-        padding: 10px 0; /* Adjust padding for smaller screens */
+        max-width: 100%; 
+        height: auto; 
+        padding: 10px 0; 
     }
 }
 
@@ -355,17 +355,23 @@ body {
 
 
     .categories {
-        flex-wrap: nowrap; /* Prevent wrapping */
-        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
     }
 
     .category-item {
-        flex: 0 0 50%; /* Each item takes up 50% of the container */
-        /* Adjusted to ensure only 2 circles are displayed */
+        flex: 0 0 50%; 
+       
     }
     .footer img {
-        max-width: 100%; /* Ensure footer images are fully responsive */
-        height: auto; /* Maintain aspect ratio */
-        padding: 10px 0; /* Further adjustment for mobile */
+        max-width: 100%; 
+        height: auto; 
+        padding: 10px 0; 
     }
+}
+
+
+.about img{
+    width: 100%;
+    height: auto;
 }
