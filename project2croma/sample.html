@@ -18,98 +18,175 @@
                 <div class="logo">
                     <img src="cromaimages/cromaheadingimg.svg" alt="">
                 </div>
-                <div class="searchbar">
-                    <span class="material-symbols-outlined"></span>
-                    <input type="text" placeholder="">
-                    <img src="cromaimages/search.png" alt="Search" class="search-icon">
+                <div class="menu">
+                    <img src="cromaimages/menubar.png" alt="Menu Image">
                 </div>
-                <div class="accountlogo">
+                <div class="searchbar">
+                    <div class="search">
+                        <input type="text" placeholder="What are you looking for?" class="search-input">
+                        <img src="cromaimages/search.png" alt="Search" class="search-icon">
+                    </div>
+                </div>
+                <div class="account">
 
                     <img src="cromaimages/accountimg.png" alt="">
                     <img src="cromaimages/shoppingcartimg.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="categories-container">
-            <button class="scroll-button left" onclick="scrollCategories(-200)">&#9664;</button>
-            <div class="categories">
-                <div class="category-item">
-                    <img src="cromaimages/mobilesimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/washingmechineimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/tvimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Laptopimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Air_Conditionerimgwebp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Kitchen_Appliancesimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Refrigeeratorimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Headsetimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/geyserimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/wWater_Purifiersimgebp" alt="">
-                </div>
-                <button class="scroll-button right" onclick="scrollCategories(200)">&#9654;</button>
+        <div class="container">
+            <div class="slider">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
 
-                <div class="category-item">
-                    <img src="cromaimages/Home_theaterimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Tablets_yzod4fimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Wearables_iunu7himg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Speaker_g2mbgnimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Grooming_vvxuddimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Accessories_kefonyimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Microwaves_otd6qqimg.webp" alt="">
-                </div>
-                <div class="category-item">
-                    <img src="cromaimages/Cameras_a6n2jyimg.webp" alt="">
-                </div>
-            </div>
-        </div>
-        <section class="container3">
-            <div class="products">
                 <div class="product-slider">
-                    <div class="product-item">
-                        <img src="cromaimages/neu_offers enjoy uptoimg.webp" alt="Product 1">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="productbtn">
+                        <div class="slider">
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/mobilesimg.webp" alt="mobiles">
+                                </div>
+                                <p>mobiles</p>
+                            </div>
 
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/washingmechineimg.webp" alt="washing mechine">
+                                </div>
+                                <p>washing mechine</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/tvimg.webp" alt="tv">
+                                </div>
+                                <p>Television</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Laptopimg.webp" alt="laptops">
+                                </div>
+                                <p>Laptops</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Air_Conditionerimgwebp" alt="air conditioner">
+                                </div>
+                                <p>Air conditioner</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Kitchen_Appliancesimg.webp" alt="kitchen appliance">
+                                </div>
+                                <p>Kitchen Appliences</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Refrigeeratorimg.webp" alt="refrigerator">
+                                </div>
+                                <p>Refrigerator</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Headsetimg.webp" alt="headset">
+                                </div>
+                                <p>Headphones&Earphones</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/geyserimg.webp" alt="geysers">
+                                </div>
+                                <p>Geysers</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/wWater_Purifiersimgebp" alt="water purifers">
+                                </div>
+                                <p>Water Purifers</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Home_theaterimg.webp" alt="home theater">
+                                </div>
+                                <p>Home Theators&Soundbars</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Tablets_yzod4fimg.webp" alt="tablet">
+                                </div>
+                                <p>Tablets</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Wearables_iunu7himg.webp" alt="wearables">
+                                </div>
+                                <p>Wearables</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Speaker_g2mbgnimg.webp" alt="speakers">
+                                </div>
+                                <p>Speakers&Mediaplayers</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Grooming_vvxuddimg.webp" alt="grooming">
+                                </div>
+                                <p>Grooming</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Accessories_kefonyimg.webp" alt="accessories">
+                                </div>
+                                <p>Accessories</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Microwaves_otd6qqimg.webp" alt="microwaves">
+                                </div>
+                                <p>Microwaves</p>
+                            </div>
+                            <div class="category-item">
+                                <div class="square">
+                                    <img src="cromaimages/Cameras_a6n2jyimg.webp" alt="camera">
+                                </div>
+                                <p>Cameras</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <img src="cromaimages/HDFC_ICIC_30May2024_kzbaou.webp" alt="Product 1">
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                <div class="container">
+                    <div class="products">
+                        <div class="imagecontainer">
+                            <img src="cromaimages/neu_offers enjoy uptoimg.webp" alt="Product 1">
+                            <div class="product-item">
+                                <img src="cromaimages/HDFC_ICIC_30May2024_kzbaou.webp" alt="Product 1">
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="container4">
-            <div class="products1">
                 <h1>Exciting Bank Offers For You</h1>
-                <div class="product-slider1">
-                    <div class="product-item1">
-                        <img src="cromaimages/flat.webp" alt="Product 1">
+
+                <div class="container2">
+                    <div class="container2img">
+                        <div class="imgcontainer">
+                            <img src="cromaimages/flat.webp" alt="Product 1">
+                        </div>
 
                     </div>
+                </div>
+                <div class="container4">
+                    <h1>What’s Hot</h1>
+                    <div class="fourcon">
+                        <img src="cromaimages/Air_Conditionerimgwebp" alt="Air Conditioner">
+                    </div>
+                    <div class="fourcon">
+                        <img src="cromaimages/redmiimg..webp" alt="Redmi Product">
+                    </div>
+                    <div class="fourcon">
+                        <img src="cromaimages/microwave oven img.webp" alt="Microwave">
+                    </div>
+                </div>
