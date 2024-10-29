@@ -1,46 +1,45 @@
 let currentSlide = 0;
 
-// Slider for main images
+
 function changeSlide(direction) {
     const slides = document.querySelectorAll('.slider img');
     currentSlide += direction;
 
-    // Wrap around the slides
+
     if (currentSlide >= slides.length) {
         currentSlide = 0;
     } else if (currentSlide < 0) {
         currentSlide = slides.length - 1;
     }
 
-    const offset = -currentSlide * 100; // Adjust based on the current slide
+    const offset = -currentSlide * 100; 
     document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
 }
 
-// Auto slide every 5 seconds
+
 setInterval(() => {
     changeSlide(1);
 }, 5000);
 
-// Product slider functionality
 let currentProductSlide = 0;
 
 function moveSlide(direction) {
     const slider = document.querySelector('.productbtn');
     const items = document.querySelectorAll('.category-item');
     const totalItems = items.length;
-    const itemsPerView = 4; // Number of items to show at a time
+    const itemsPerView = 4;
 
-    // Calculate new slide index
+ 
     currentProductSlide += direction;
-    if (currentProductSlide < 0) currentProductSlide = 0; // Prevent going back
-    if (currentProductSlide > totalItems - itemsPerView) currentProductSlide = totalItems - itemsPerView; // Prevent going forward
+    if (currentProductSlide < 0) currentProductSlide = 0; 
+    if (currentProductSlide > totalItems - itemsPerView) currentProductSlide = totalItems - itemsPerView;
 
-    // Move the slider
-    const offset = currentProductSlide * -((100 / itemsPerView) + 20); // Adjust for margin
+
+    const offset = currentProductSlide * -((100 / itemsPerView) + 20); 
     slider.style.transform = `translateX(${offset}%)`;
 }
 
-// Image adjustments for specific containers
+
 document.addEventListener('DOMContentLoaded', function() {
     const imgContainers = [
         { selector: '.con6img img', height: '400px' },
@@ -52,56 +51,56 @@ document.addEventListener('DOMContentLoaded', function() {
     imgContainers.forEach(container => {
         const img = document.querySelector(container.selector);
         if (img) {
-            img.style.width = '100%'; // Full width of the container
-            img.style.height = container.height; // Set specific height
-            img.style.objectFit = 'cover'; // Ensure the image fills the area
+            img.style.width = '100%'; 
+            img.style.height = container.height;
+            img.style.objectFit = 'cover'; 
         }
     });
 
-    // Initialize slides
+  
     let slideIndex = 0;
 
     function showSlide(index) {
         const slides = document.querySelectorAll('.slide');
         slides.forEach((slide, i) => {
-            slide.classList.remove('active'); // Hide all slides
+            slide.classList.remove('active'); 
             if (i === index) {
-                slide.classList.add('active'); // Show the current slide
+                slide.classList.add('active'); 
             }
         });
     }
 
     function changeSlide(direction) {
         const slides = document.querySelectorAll('.slide');
-        slideIndex = (slideIndex + direction + slides.length) % slides.length; // Cycle through slides
+        slideIndex = (slideIndex + direction + slides.length) % slides.length; 
         showSlide(slideIndex);
     }
 
-    // Initialize with the first slide
+ 
     showSlide(slideIndex);
 
-    // Optional: Automatic slide change every 5 seconds
+
     setInterval(() => {
-        changeSlide(1); // Automatically go to the next slide
+        changeSlide(1); 
     }, 5000);
 });
 
-// Horizontal scrolling functionality
+
 function scrollLeft() {
     const container = document.querySelector('.scrolling-content');
-    const scrollAmount = 150; // Adjust this value for how much to scroll
+    const scrollAmount = 150; 
     container.scrollBy({
-        left: -scrollAmount, // Scroll left
-        behavior: 'smooth' // Smooth scrolling
+        left: -scrollAmount,
+        behavior: 'smooth' 
     });
 }
 
 function scrollRight() {
     const container = document.querySelector('.scrolling-content');
-    const scrollAmount = 150; // Adjust this value for how much to scroll
+    const scrollAmount = 150; 
     container.scrollBy({
-        left: scrollAmount, // Scroll right
-        behavior: 'smooth' // Smooth scrolling
+        left: scrollAmount, 
+        behavior: 'smooth' 
     });
 }
 
